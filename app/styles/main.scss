@@ -1,0 +1,48 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+/* Space out content a bit */
+body {
+  padding-bottom: 20px;
+}
+
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.navbar {
+  margin-bottom: 0;
+}
+
+.footer {
+  padding-top: 25px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+.jumbotron {
+  height: 40em;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.banner1 {
+  text-align: center;
+  background-color: #e5e5e5;
+  height: 200px;
+}
+
+.icon {
+  text-align: center;
+  margin-top: 20px;
+}
