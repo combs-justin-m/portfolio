@@ -9,25 +9,16 @@ body {
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.footer {
+footer {
   padding-left: 15px;
   padding-right: 15px;
-}
-
-/* Custom page header */
-.header {
-  border-bottom: 1px solid #e5e5e5;
+  padding-top: 15px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
 }
 
 .navbar {
   margin-bottom: 0;
-}
-
-.footer {
-  padding-top: 25px;
-  color: #777;
-  border-top: 1px solid #e5e5e5;
 }
 
 .jumbotron {
@@ -36,13 +27,14 @@ body {
   margin-bottom: 0;
 }
 
-.banner1 {
+main {
   text-align: center;
   background-color: #e5e5e5;
-  height: 200px;
+  min-height: 200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .icon {
   text-align: center;
-  margin-top: 20px;
 }

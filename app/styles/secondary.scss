@@ -1,24 +1,34 @@
 @import "main";
 
-.banner2 {
+/**********************
+placeholder grid colors
+**********************/
+.col-md-4 {
+    border: 1px solid black;
+    height: 300px;
+    background-color: #777;
+}
+
+.col-md-4:nth-child(2) {
+    background-color: #9f9f9f;
+}
+/**********************
+placeholder grid colors
+**********************/
+
+article {
+    border: 1px solid black;
     height: 600px;
-    background-color: #e5e5e5;
-}
-
-.thumbnails .col-md-3 {
-    margin-left: 60px;
-    margin-top: 60px;
-    height: 200px;
     background-color: #777;
 }
 
-.banner3 {
-    min-height: 600px;
-    background-color: #e5e5e5;
+figure {
+    height: 300px;
+    border: 1px solid black;
+
 }
 
-.thumbnails .col-md-5 {
-    margin: 30px;
-    height: 500px;
-    background-color: #777;
+section {
+    background-color: #e5e5e5;
+    min-height: 200px;
 }
