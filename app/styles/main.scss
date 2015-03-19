@@ -8,7 +8,11 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 VARIABLES
 ******************************/
 
-$primarycolor: #00f59c;
+$primarycolor: #0eb79f;
+$secondarycolor: #00a86b;
+$thirdcolor: #005c3a;
+$fourthcolor:#0091a8;
+$fifthcolor: #a8003d;
 $fontcolor: #eee;
 
 /*****************************
@@ -16,7 +20,6 @@ GENERAL
 ******************************/
 
 body {
-  background: $primarycolor;
   font-family: 'Droid Sans', sans-serif;
   padding-bottom: 20px;
 }
@@ -25,10 +28,11 @@ body {
   z-index: 1;
   border: none;
   background-color: transparent;
-  margin-bottom: 0;
+  padding: 10px;
 
   .navbar-brand {
     color: $fontcolor;
+    font-size: 22px;
   }
 
   ul {
@@ -37,6 +41,7 @@ body {
 }
 
 #bs-example-navbar-collapse-1 > ul > li > a {
+  font-size: 18px;
   color: $fontcolor;
 }
 #bs-example-navbar-collapse-1 > ul > li > a:hover {
@@ -54,32 +59,52 @@ footer {
 /*****************************
 CONTENT
 ******************************/
+.jumbo-wrapper {
+  position: relative;
+  background-color: rgba(14,183,159, 0.5);
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
 
 .jumbotron {
   background-image: url(../images/desktop.jpg);
   background-size: cover;
   position: relative;
-  height: 100vh;
   text-align: center;
+  height: 100vh;
+  padding: 0;
   margin-bottom: 0;
+
   h1 {
-    margin-top: 80px;
-    color: #eee;
+    margin-top: 110px;
+    color: $fontcolor;
   }
 
-  p {
-    color: #eee;
+  h3 {
+    color: $fontcolor;
   }
 
   .btn {
-    margin-top: 10%;
+    margin-top: 5%;
     background-color: transparent;
-    color: $primarycolor;
-    border: 1px solid $primarycolor;
+    color: $fontcolor;
+    border: 2px solid $fontcolor;
+    font-size: 22px;
+    font-weight: 700;
+    text-shadow: 1px 1px black;
+
   }
   .btn-primary:hover {
     background-color: $primarycolor;
+  }
+
+  .downarrow {
     color: $fontcolor;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -35px;
   }
 }
 
@@ -89,9 +114,88 @@ main {
 }
 
 .main-row {
-  margin: 30px 0 20px 0;
+  margin-top: 30px;
 }
 
 .icon {
   text-align: center;
+  height: 212.5px;
+}
+
+.firstcol {
+  margin-bottom: 30px;
+  padding: 0;
+
+  .main-wrapper {
+    height: 425px;
+    margin: 0 15px;
+    background-color: #27ae60;
+  }
+
+  .icon {
+    padding-top: 71.25px;
+    background-color: #2ecc71;
+  }
+
+  h4 {
+    padding: 10px 0;
+    font-size: 26px;
+  }
+
+  p{
+    font-size: 18px;
+    padding: 0  10px;
+  }
+}
+
+.secondcol {
+  margin-bottom: 30px;
+  padding: 0;
+
+  .main-wrapper {
+    height: 425px;
+    margin: 0 15px;
+    background-color: #16a085;
+  }
+
+  .icon {
+    padding-top: 71.25px;
+    background-color: #1abc9c;
+  }
+
+  h4 {
+    padding: 10px 0;
+    font-size: 26px;
+  }
+
+  p{
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
+
+.thirdcol {
+  margin-bottom: 30px;
+  padding: 0;
+
+  .main-wrapper {
+    height: 425px;
+    margin: 0 15px;
+    background-color: #2980b9;
+  }
+
+  .icon {
+    padding-top: 71.25px;
+    background-color: #3498db;
+  }
+
+  h4 {
+    padding: 10px 0;
+    font-size: 26px;
+  }
+
+  p{
+    font-size: 18px;
+    padding: 0 10px;
+  }
 }
