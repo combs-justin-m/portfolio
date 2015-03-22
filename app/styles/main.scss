@@ -14,6 +14,9 @@ $secondarycolor: #16a085;
 $flat1: #2ecc71;
 $flat2: #3498db;
 $flat3: #9b59b6;
+$flat4: #f1c40f;
+$flat5: #e67e22;
+$flat6: #e74c3c;
 $fontdark: #777;
 $fontbright: #eee;
 
@@ -34,6 +37,14 @@ h1 {
 
 p {
   font-size: 18px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
 }
 
 header {
@@ -98,6 +109,9 @@ JUMBO
 ******************************/
 
 .jumbotron {
+  background-image: url(../images/skyline.jpg);
+  background-size: cover;
+  background-position: center;
   position: relative;
   text-align: center;
   height: 100vh;
@@ -131,7 +145,7 @@ JUMBO
   }
 
   .downarrow {
-    color: $fontdark;
+    color: $fontbright;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -153,7 +167,7 @@ ONE
 
 #circle1 {
   position: relative;
-  margin: 50px auto;
+  margin: 100px auto;
   width: 50px;
   height: 50px;
   background: $flat1;
@@ -167,11 +181,11 @@ ONE
   }
 }
 
-#circlesmall {
+.circlesmall {
   position: relative;
   margin: 20px auto 10px;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   background: $flat1;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
@@ -189,7 +203,7 @@ TWO
 
 #triangle2 {
   position: relative;
-  margin: 50px auto;
+  margin: 100px auto;
   width: 0;
   height: 0;
   border-left: 30px solid transparent;
@@ -202,7 +216,7 @@ TWO
   }
 }
 
-#trianglesmall {
+.trianglesmall {
   position: relative;
   margin: 20px auto 10px;
   width: 0;
@@ -245,3 +259,209 @@ TWO
 THREE
 ******************************/
 
+#diamond3 {
+  position: relative;
+  margin: 100px auto;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: $flat3;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-transform-origin: 0 100% 0deg;
+  transform-origin: 0 100% 0deg;
+
+  h2 {
+  margin-left: 4px;
+  padding-top: 4px;
+  -webkit-transform: rotateZ(45deg);
+  transform: rotateZ(45deg);
+  }
+}
+
+.diamondsmall {
+  position: relative;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  margin-top: -10px;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background: $flat3;
+  -webkit-transform: rotateZ(-45deg);
+  transform: rotateZ(-45deg);
+  -webkit-transform-origin: 0 100% 0deg;
+  transform-origin: 0 100% 0deg;
+  float: left;
+
+
+  i {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    margin-left: 5px;
+    padding-top: 8px;
+  }
+
+  h2 {
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+    margin-top: 0;
+    margin-left: 5px;
+    padding-top: 2px;
+  }
+
+  img {
+    height: 35px;
+    width: 35px;
+    margin-top: 3px;
+    -webkit-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+  }
+}
+
+.progress {
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+/*****************************
+FOUR
+******************************/
+
+#rectangle4 {
+  position: relative;
+  margin: 100px auto;
+  width: 60px;
+  height: 33px;
+  background-color: $flat4;
+}
+
+.work-container {
+  height: 300px;
+  width: 100%;
+  background-color: $flat4;
+  margin: 50px auto 0;
+
+  figure {
+    background-image: url(../images/b_b.png);
+    background-size: cover;
+    background-position: top;
+    border: 8px solid $flat4;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+#work1 {
+  display: none;
+  color: $fontbright;
+  font-size: 40px;
+  background-color: rgba(243, 156, 18, 0.9);
+  height: 100%;
+}
+
+figure:hover #work1 {
+  display: block;
+}
+
+/*****************************
+FIVE
+******************************/
+
+#pentagon5 {
+    position: relative;
+    margin: 100px auto;
+    width: 55px;
+    border-width: 30px 12px 0;
+    border-style: solid;
+    border-color: $flat5 transparent;
+
+    h2 {
+      position: absolute;
+      margin-top: -38px;
+      margin-left: 8px;
+  }
+}
+#pentagon5:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -50px;
+    left: -11px;
+    border-width: 0 27px 20px;
+    border-style: solid;
+    border-color: transparent transparent $flat5;
+}
+
+.blog-container {
+  margin-bottom: 10px;
+  height: 400px;
+  background-color: $flat5;
+}
+
+#pentagonsmall {
+    position: relative;
+    margin: 35px auto;
+    width: 26px;
+    border-width: 14px 6px 0;
+    border-style: solid;
+    border-color: $flat5 transparent;
+}
+
+#pentagonsmall:before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -24px;
+    left: -6px;
+    border-width: 0 13px 10px;
+    border-style: solid;
+    border-color: transparent transparent $flat5;
+}
+
+/*****************************
+SIX
+******************************/
+
+#hexagon6 {
+  margin: 100px auto;
+  width: 40px;
+  height: 25px;
+  background: $flat6;
+  position: relative;
+
+  h2 {
+    position: relative;
+    margin-left: 2px;
+    top: -4px;
+  }
+}
+#hexagon6:before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 10px solid $flat6;
+}
+#hexagon6:after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 10px solid $flat6;
+}
