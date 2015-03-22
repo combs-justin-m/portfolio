@@ -28,11 +28,12 @@ html {
 }
 
 body {
+  background-image: url(../images/noisy_grid.png);
+  background-repeat: repeat;
+}
 
 h1 {
   font-size: 58px;
-}
-
 }
 
 p {
@@ -43,7 +44,12 @@ li {
   list-style-type: none;
 }
 
+a {
+  color: inherit;
+}
+
 a:hover {
+  color: inherit;
   text-decoration: none;
 }
 
@@ -63,17 +69,6 @@ header {
   background-color: red;
 }
 
-.navbutton {
-  display: inline-block;
-  height: 50px;
-  width: 50px;
-  float: right;
-}
-
-#dropdown-fix {
-  left: -110px;
-}
-
 section {
   text-align: center;
   min-height: 200px;
@@ -83,10 +78,6 @@ section {
   margin-top: 50px;
 }
 
-.three-col-icon {
-  padding-top: 70px;
-  margin-left: -30px;
-}
 
 footer {
   background-image: url(../images/noisy_diagonal.png);
@@ -103,6 +94,68 @@ footer {
   width: 80px;
   height: 1px;
 }
+
+
+/*****************************
+NAVBAR
+******************************/
+
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+  position: absolute;
+  height: 200px;
+  width: 175px;
+  z-index: 100;
+  float: right;
+  top: 50%;
+  margin-top: -83px;
+  right: 0;
+  margin-right: -55px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    color: #999;
+    border-right: 2px solid transparent;
+    padding: 4px 20px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    color: $primarycolor;
+    text-decoration: none;
+    background-color: transparent;
+    border-right-color: $primarycolor;
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
 
 /*****************************
 JUMBO
@@ -229,6 +282,7 @@ TWO
 #trianglewrapper {
   margin: 0 auto;
   position: relative;
+  width: 100%;
   left: 50%;
   margin-left: -100px;
 }
@@ -244,7 +298,6 @@ TWO
 
 
 .three-col-wrapper {
-  min-height: 150px;
   margin: 0 15px;
   margin-bottom: 30px;
   padding: 0;
@@ -253,6 +306,11 @@ TWO
     padding: 10px 0;
     font-size: 26px;
   }
+}
+
+.triangle-col-icon {
+  padding-top: 70px;
+  margin-left: -30px;
 }
 
 /*****************************
@@ -400,6 +458,9 @@ FIVE
 }
 
 .blog-container {
+  background-image: url(../images/hello.jpg);
+  background-size: cover;
+  background-position: center;
   margin-bottom: 10px;
   height: 400px;
   background-color: $flat5;
@@ -464,4 +525,80 @@ SIX
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
   border-top: 10px solid $flat6;
+}
+
+#hexagon {
+  margin: 50px auto;
+  width: 60px;
+  height: 38px;
+  background: $flat6;
+  position: relative;
+}
+#hexagon:before {
+  content: "";
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 15px solid $flat6;
+}
+#hexagon:after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-top: 15px solid $flat6;
+}
+
+.hexagon-col-icon {
+  position: absolute;
+  margin-left: 12px;
+  top: -2px;
+}
+
+.contact-col-wrapper {
+  min-height: 150px;
+  margin: 0 15px;
+  margin-bottom: 30px;
+  padding: 0;
+}
+
+.contact-col-wrapper:hover .hexagon-col-icon {
+  color: $fontbright;
+}
+
+#hexagon-social {
+  margin: 0 auto 30px;
+  width: 40px;
+  height: 25px;
+  background: $flat6;
+  position: relative;
+}
+
+#hexagon-social:hover {
+  color: $fontbright;
+}
+
+#hexagon-social:before {
+  @extend #hexagon6:before;
+}
+
+ #hexagon-social:after {
+  @extend #hexagon6:after;
+}
+
+#hexagon-social > i {
+  position: relative;
+  top: -1px;
+}
+
+.social-row {
+  margin-top: 30px;
 }
