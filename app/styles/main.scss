@@ -42,7 +42,8 @@ NAVBAR
   }
 
   p {
-    font-size: 12px;
+    font-size: 14px;
+    font-weight: 500;
     text-align: left;
     color: $fontdark;
 
@@ -98,7 +99,6 @@ NAVBAR
   margin-top: 155px;
 
   i {
-    text-align: center;
     width: 25px;
     margin: 0 15px;
 
@@ -197,7 +197,7 @@ ONE
 }
 
 #circle1 {
-  background-color: $flat1;
+  background-color: $primarycolor;
   color: $fontbright;
   position: absolute;
   margin: 0;
@@ -206,6 +206,12 @@ ONE
   width: 100%;
   height: 150px;
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
+  }
 }
 
 .circlesmall {
@@ -213,15 +219,30 @@ ONE
   margin: 20px auto 10px;
   width: 18px;
   height: 18px;
-  background: $flat1;
+  background: $primarycolor;
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
 
+.bio-icon {
+  display: inline-block;
+
+  i {
+    float: left;
+    color: $primarycolor;
+    margin: 5px 15px;
+  }
+
+  h3 {
+    margin-top: 5px;
+    float: right;
+  }
+}
+
 #biography {
-  margin: 0 auto 200px;
-  max-width: 50%;
+  margin: 30px auto 200px;
+  max-width: 80%;
 }
 
 /*****************************
@@ -238,6 +259,12 @@ TWO
   height: 150px;
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
   background-color: $flat2;
+
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
+  }
 }
 
 .trianglesmall {
@@ -291,6 +318,12 @@ THREE
 #diamond3 {
   @extend #triangle2;
   background-color: $flat3;
+
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
+  }
 }
 
 .diamondsmall {
@@ -347,34 +380,38 @@ FOUR
 #rectangle4 {
   @extend #triangle2;
   background-color: $flat4;
-}
 
-.work-container {
-  height: 300px;
-  width: 100%;
-  background-color: $flat4;
-  margin: 30px auto;
-
-  figure {
-    background-image: url(../images/b_b.png);
-    background-size: cover;
-    background-position: top;
-    border: 8px solid $flat4;
-    height: 100%;
-    width: 100%;
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
   }
 }
 
-#work1 {
-  display: none;
-  color: $fontbright;
-  font-size: 40px;
-  background-color: rgba(243, 156, 18, 0.9);
-  height: 100%;
+#work1logo {
+  margin-top: 5px;
+  float: left;
+
+  h2 {
+
+  }
 }
 
-figure:hover #work1 {
-  display: block;
+.worktitle {
+  border-right: 1px solid $fontdark;
+
+  @media (max-width:767px) {
+    display: none;
+  }
+}
+
+.workyear {
+  text-align: right;
+
+  p {
+    color: $flat4;
+    font-size: 14px;
+  }
 }
 
 /*****************************
@@ -384,6 +421,12 @@ FIVE
 #pentagon5 {
   @extend #triangle2;
   background-color: $flat5;
+
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
+  }
 }
 
 .blog-container {
@@ -423,6 +466,12 @@ SIX
 #hexagon6 {
   @extend #triangle2;
   background-color: $flat6;
+
+  h1 {
+    position: relative;
+    top: 50%;
+    margin-top: -31.5px;
+  }
 }
 
 #hexagon {
