@@ -10,13 +10,13 @@ var hour = today.getHours();
 var greeting;
 
 if (hour > 18) {
-    greeting = 'Good Evening.' ;
+    greeting = 'Good Evening' ;
 } else if (hour > 12) {
-    greeting = 'Good Afternoon.' ;
+    greeting = 'Good Afternoon' ;
 } else if (hour > 0) {
-    greeting = 'Good Morning.' ;
+    greeting = 'Good Morning' ;
 } else {
-    greeting = 'Welcome.';
+    greeting = 'Welcome';
 }
 
 document.getElementById('datejs').innerHTML = greeting;
