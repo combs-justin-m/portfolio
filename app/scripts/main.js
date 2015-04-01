@@ -10,11 +10,11 @@ var hour = today.getHours();
 var greeting;
 
 if (hour > 18) {
-    greeting = 'Good Evening' ;
+    greeting = '<i class="fa fa-moon-o"></i>Good Evening' ;
 } else if (hour > 12) {
-    greeting = 'Good Afternoon' ;
+    greeting = '<i class="fa fa-sun-o"></i>Good Afternoon' ;
 } else if (hour > 0) {
-    greeting = 'Good Morning' ;
+    greeting = '<i class="fa fa-coffee"></i>Good Morning' ;
 } else {
     greeting = 'Welcome';
 }

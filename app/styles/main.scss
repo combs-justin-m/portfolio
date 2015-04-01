@@ -218,7 +218,7 @@ ONE
 
 .circlesmall {
   position: relative;
-  margin: 20px auto 10px;
+  margin: 20px auto 25px;
   width: 18px;
   height: 18px;
   background: $primarycolor;
@@ -233,7 +233,7 @@ ONE
   i {
     float: left;
     color: $primarycolor;
-    margin: 5px 15px;
+    margin: 5px 15px 5px 0;
   }
 
   h3 {
@@ -247,6 +247,13 @@ ONE
   max-width: 80%;
 }
 
+#datejs {
+
+  i {
+    color: $primarycolor;
+    padding-right: 15px;
+  }
+}
 /*****************************
 TWO
 ******************************/
@@ -501,7 +508,7 @@ SIX
 
 #hexagon6 {
   @extend #triangle2;
-  background-color: $flat6;
+  background-color: $primarycolor;
 
   h1 {
     position: relative;
@@ -514,7 +521,7 @@ SIX
   margin: 50px auto;
   width: 60px;
   height: 38px;
-  background: $flat6;
+  background: $primarycolor;
   position: relative;
 }
 #hexagon:before {
@@ -526,7 +533,7 @@ SIX
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-bottom: 15px solid $flat6;
+  border-bottom: 15px solid $primarycolor;
 }
 #hexagon:after {
   content: "";
