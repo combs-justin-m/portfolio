@@ -27,6 +27,7 @@ NAVBAR
   height: 150px;
   background-color: $primarycolor;
   color: $fontbright;
+  text-align: right;
 
   @media (max-width:767px) {
     width: 250px;
@@ -43,9 +44,8 @@ NAVBAR
   }
 
   p {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
     margin-left: 10px;
     color: $fontdark;
 
@@ -169,12 +169,8 @@ JUMBO
 
   h1 {
     margin-top: 0;
-    padding-top: 110px;
+    padding-top: 10%;
     color: $primarycolor;
-  }
-
-  h3 {
-    color: $fontdark;
   }
 
   .downarrow {
@@ -192,27 +188,30 @@ ONE
 .portrait1 {
     background-image: url(../images/jc.jpg);
     background-size: cover;
-    margin: 200px auto 30px;
+    margin: 0 auto 30px;
     height: 300px;
     width: 300px;
     border-radius: 100%;
+
+    @media (max-width:767px) {
+      height: 200px;
+      width: 200px;
+    }
 }
 
 #circle1 {
   background-color: $primarycolor;
   color: $fontbright;
-  position: absolute;
-  margin: 0;
-  left: 0;
   padding: 0;
   width: 100%;
   height: 150px;
   box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  text-align: left;
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -259,20 +258,14 @@ TWO
 ******************************/
 
 #triangle2 {
-  color: $fontbright;
-  position: absolute;
-  margin-top: -200px;
-  left: 0;
-  padding: 0;
-  width: 100%;
-  height: 150px;
-  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+  @extend #circle1;
   background-color: $flat2;
+
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -326,13 +319,13 @@ THREE
 ******************************/
 
 #diamond3 {
-  @extend #triangle2;
+  @extend #circle1;
   background-color: $flat3;
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -416,13 +409,13 @@ FOUR
 ******************************/
 
 #rectangle4 {
-  @extend #triangle2;
+  @extend #circle1;
   background-color: $flat4;
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -467,13 +460,13 @@ FIVE
 ******************************/
 
 #pentagon5 {
-  @extend #triangle2;
+  @extend #circle1;
   background-color: $flat5;
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -498,8 +491,48 @@ FIVE
     border-color: transparent transparent $flat5;
 }
 
-#blogtitle {
-  margin-bottom: 45px;
+.blogcard {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,.2);
+
+  img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+
+  footer {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #e5e5e5;
+  }
+}
+
+.blogtext {
+    text-align: left;
+    padding: 0 15px;
+    margin: 0;
+  }
+
+.blogthumbnail {
+  height: 100%;
+  width: 100%;
+}
+
+.bloglink {
+  text-align: left;
+  margin: 30px 15px;
+  text-decoration: underline;
+
+  i {
+    text-decoration: underline;
+  }
+}
+
+#blogjs {
+  padding: 15px;
+  text-align: left;
 }
 
 /*****************************
@@ -507,13 +540,13 @@ SIX
 ******************************/
 
 #hexagon6 {
-  @extend #triangle2;
+  @extend #circle1;
   background-color: $primarycolor;
 
   h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px;
+    margin: 0 0 0 15px;
+    padding-top: 43.5px;
   }
 }
 
@@ -544,7 +577,7 @@ SIX
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid $flat6;
+  border-top: 15px solid $primarycolor;
 }
 
 .hexagon-col-icon {
@@ -568,7 +601,7 @@ SIX
   margin: 0 auto 30px;
   width: 40px;
   height: 25px;
-  background: $flat6;
+  background: $primarycolor;
   position: relative;
 }
 
@@ -585,7 +618,7 @@ SIX
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 10px solid $flat6;
+  border-bottom: 10px solid $primarycolor;
 }
 
  #hexagon-social:after {
@@ -597,7 +630,7 @@ SIX
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 10px solid $flat6;
+  border-top: 10px solid $primarycolor;
 }
 
 #hexagon-social > i {

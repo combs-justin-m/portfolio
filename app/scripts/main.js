@@ -20,3 +20,9 @@ if (hour > 18) {
 }
 
 document.getElementById('datejs').innerHTML = greeting;
+
+var msg = '<b>Title: </b>' + document.getElementById('blogtitle').innerHTML + '<br>';
+msg += '<b>Last modified: </b>' + document.lastModified;
+
+var el = document.getElementById('blogjs');
+el.innerHTML = msg;
