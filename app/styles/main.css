@@ -4533,6 +4533,9 @@ body {
 
 h1 {
   font-size: 58px; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 38px; } }
 
 p {
   font-size: 18px; }
@@ -4558,14 +4561,7 @@ header {
 section {
   text-align: center;
   min-height: 100vh;
-  margin-bottom: 150px; }
-
-footer {
-  background-image: url(../images/noisy_diagonal.png);
-  background-repeat: repeat;
-  padding: 15px;
-  color: #777;
-  border-top: 1px solid rgba(0, 0, 0, 0.87); }
+  margin: 30px 0; }
 
 #wrapper {
   padding-left: 250px;
@@ -4593,7 +4589,8 @@ NAVBAR
 #logo {
   height: 150px;
   background-color: #E53935;
-  color: #eee; }
+  color: #eee;
+  text-align: right; }
   @media (max-width: 767px) {
     #logo {
       width: 250px; } }
@@ -4605,9 +4602,8 @@ NAVBAR
       #logo h2 {
         display: none; } }
   #logo p {
-    font-size: 14px;
-    font-weight: 500;
-    text-align: left;
+    font-size: 18px;
+    font-weight: 300;
     margin-left: 10px;
     color: rgba(0, 0, 0, 0.87); }
     @media (max-width: 767px) {
@@ -4703,10 +4699,8 @@ JUMBO
   margin-bottom: 0; }
   .jumbotron h1 {
     margin-top: 0;
-    padding-top: 110px;
+    padding-top: 10%;
     color: #E53935; }
-  .jumbotron h3 {
-    color: rgba(0, 0, 0, 0.87); }
   .jumbotron .downarrow {
     color: rgba(0, 0, 0, 0.87);
     position: absolute;
@@ -4720,25 +4714,27 @@ ONE
 .portrait1 {
   background-image: url(../images/jc.jpg);
   background-size: cover;
-  margin: 200px auto 30px;
+  margin: 0 auto 30px;
   height: 300px;
   width: 300px;
   border-radius: 100%; }
+  @media (max-width: 767px) {
+    .portrait1 {
+      height: 200px;
+      width: 200px; } }
 
-#circle1 {
+#circle1, #triangle2, #diamond3, #rectangle4, #pentagon5, #hexagon6 {
   background-color: #E53935;
   color: #eee;
-  position: absolute;
-  margin: 0;
-  left: 0;
   padding: 0;
   width: 100%;
   height: 150px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
-  #circle1 h1 {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: left; }
+  #circle1 h1, #triangle2 h1, #diamond3 h1, #rectangle4 h1, #pentagon5 h1, #hexagon6 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 .circlesmall {
   position: relative;
@@ -4769,20 +4765,12 @@ ONE
 /*****************************
 TWO
 ******************************/
-#triangle2, #diamond3, #rectangle4, #pentagon5, #hexagon6 {
-  color: #eee;
-  position: absolute;
-  margin-top: -200px;
-  left: 0;
-  padding: 0;
-  width: 100%;
-  height: 150px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+#triangle2 {
   background-color: #9C27B0; }
-  #triangle2 h1, #diamond3 h1, #rectangle4 h1, #pentagon5 h1, #hexagon6 h1 {
+  #triangle2 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 .trianglesmall {
   position: relative;
@@ -4828,8 +4816,8 @@ THREE
   background-color: #3F51B5; }
   #diamond3 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 .diamondsmall {
   position: relative;
@@ -4896,8 +4884,8 @@ FOUR
   background-color: #00BCD4; }
   #rectangle4 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 #work1logo {
   margin-top: 5px;
@@ -4929,8 +4917,8 @@ FIVE
   background-color: #009688; }
   #pentagon5 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 #pentagonsmall {
   position: relative;
@@ -4951,8 +4939,38 @@ FIVE
   border-style: solid;
   border-color: transparent transparent #009688; }
 
-#blogtitle {
-  margin-bottom: 45px; }
+.blogcard {
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); }
+  .blogcard img {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px; }
+  .blogcard footer {
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: #e5e5e5; }
+
+.blogtext {
+  text-align: left;
+  padding: 0 15px;
+  margin: 0; }
+
+.blogthumbnail {
+  height: 100%;
+  width: 100%; }
+
+.bloglink {
+  text-align: left;
+  margin: 30px 15px;
+  text-decoration: underline; }
+  .bloglink i {
+    text-decoration: underline; }
+
+#blogjs {
+  padding: 15px;
+  text-align: left; }
 
 /*****************************
 SIX
@@ -4961,8 +4979,8 @@ SIX
   background-color: #E53935; }
   #hexagon6 h1 {
     position: relative;
-    top: 50%;
-    margin-top: -31.5px; }
+    margin: 0 0 0 15px;
+    padding-top: 43.5px; }
 
 #hexagon {
   margin: 50px auto;
@@ -4991,7 +5009,7 @@ SIX
   height: 0;
   border-left: 30px solid transparent;
   border-right: 30px solid transparent;
-  border-top: 15px solid #F44336; }
+  border-top: 15px solid #E53935; }
 
 .hexagon-col-icon {
   position: absolute;
@@ -5011,7 +5029,7 @@ SIX
   margin: 0 auto 30px;
   width: 40px;
   height: 25px;
-  background: #F44336;
+  background: #E53935;
   position: relative; }
 
 #hexagon-social:hover {
@@ -5026,7 +5044,7 @@ SIX
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-bottom: 10px solid #F44336; }
+  border-bottom: 10px solid #E53935; }
 
 #hexagon-social:after {
   content: "";
@@ -5037,7 +5055,7 @@ SIX
   height: 0;
   border-left: 20px solid transparent;
   border-right: 20px solid transparent;
-  border-top: 10px solid #F44336; }
+  border-top: 10px solid #E53935; }
 
 #hexagon-social > i {
   position: relative;

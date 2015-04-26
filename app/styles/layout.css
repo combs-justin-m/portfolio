@@ -12,6 +12,9 @@ body {
 
 h1 {
   font-size: 58px; }
+  @media (max-width: 767px) {
+    h1 {
+      font-size: 38px; } }
 
 p {
   font-size: 18px; }
@@ -37,14 +40,7 @@ header {
 section {
   text-align: center;
   min-height: 100vh;
-  margin-bottom: 150px; }
-
-footer {
-  background-image: url(../images/noisy_diagonal.png);
-  background-repeat: repeat;
-  padding: 15px;
-  color: #777;
-  border-top: 1px solid rgba(0, 0, 0, 0.87); }
+  margin: 30px 0; }
 
 #wrapper {
   padding-left: 250px;
